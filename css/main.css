@@ -1821,7 +1821,7 @@ a {
 }
 .marketplace__tabs-box .marketplace__content-box .marketplace__content--active {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 .marketplace__tabs-box .marketplace__content-box .marketplace__content .marketplace-card {
@@ -1904,6 +1904,10 @@ a {
   background-color: transparent;
 }
 
+.marketplace__tabs button.active {
+  background-color: pink;
+}
+
 .information {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1957,6 +1961,12 @@ a {
 #wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .product-info {
@@ -2027,6 +2037,153 @@ a {
   position: absolute;
   -webkit-transform: all 0.15s ease-in-out 0s;
   transform: all 0.15s ease-in-out 0s;
+}
+
+.users {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+}
+
+.users li {
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.users li .user-item {
+  width: 363px;
+  height: 200px;
+  padding: 8px;
+  border: 1px solid rgba(22, 22, 26, 0.08);
+  border-radius: 16px;
+  background-color: #191c1f;
+}
+
+.users li:hover a.buy-now {
+  bottom: 20px;
+}
+
+#wrapper {
+  max-width: 1600;
+  margin: 0 auto;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.user-info {
+  margin-top: 10px;
+}
+
+.user-info a {
+  margin-left: 12px;
+  line-height: 1.5;
+}
+
+.user-info .user-cat a {
+  position: relative;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  bottom: 30px;
+}
+
+.user-info .user-name a {
+  text-decoration: none;
+  color: #8b8d8e;
+  font-size: 18px;
+  position: relative;
+  bottom: 30px;
+}
+
+.user-money {
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(22, 22, 26, 0.04);
+  margin-top: 15px;
+}
+
+.user-money a {
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 12px;
+  line-height: 1.8;
+}
+
+.user-money .user-price a {
+  color: rgba(22, 22, 26, 0.6);
+}
+
+.user-money .user-highest_bid a {
+  color: black;
+}
+
+.user-top {
+  position: relative;
+}
+
+.user-top img {
+  width: 100%;
+  height: auto;
+  border: 0.1px solid rgba(22, 22, 26, 0.08);
+  border-radius: 16px;
+  display: block;
+}
+
+.user-top .user-avatar img {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.user-avatar img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  vertical-align: inherit;
+}
+
+.user-info .button {
+  position: relative;
+  bottom: 75px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 17.6px;
+  padding-right: 17.6px;
+  border-radius: 14px;
+  height: 40px;
+  float: right;
+}
+
+.fa-circle-check {
+  color: yellow;
+  position: relative;
+  bottom: 30px;
+}
+
+.user-thumb img {
+  height: 100px;
 }
 
 .top-NFT .top-NFT__h-flex {
